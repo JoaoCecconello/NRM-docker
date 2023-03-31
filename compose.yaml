@@ -2,9 +2,10 @@ version: '3.8'
 
 services:
   mysql:
+    platform: linux/x86_64
     image: mysql:5.7
     restart: always
-    enviroment:
+    environment:
       - MYSQL_ROOT_PASSWORD=123456
     ports:
       - 3306:3306
@@ -29,3 +30,5 @@ services:
       - mysql
     depends_on:
       - mysql
+    ports:
+      - 3000:3000
