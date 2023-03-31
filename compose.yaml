@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mysql:
+    build:
+      context: ./db
+      dockerfile: ./db/dockerfile
+  mysql:
+    build:
+      context: ./back
+      dockerfile: ./back/dockerfile
+  mysql:
+    build:
+      context: ./front
+      dockerfile: ./front/dockerfile
+
+
