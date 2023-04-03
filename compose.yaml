@@ -32,3 +32,18 @@ services:
       - mysql
     ports:
       - 3000:3000
+    volumes:
+      - ./back:/home/app
+  front:
+    build:
+      context: front
+      dockerfile: ./dockerfile
+    links:
+      - mysql
+      - back
+    depends_on:
+      - back
+    ports:
+      - 80:3000
+    volumes:
+      - ./back:/home/app
