@@ -32,8 +32,6 @@ services:
       - mysql
     ports:
       - 3000:3000
-    volumes:
-      - ./back:/home/app
   front:
     build:
       context: front
@@ -45,5 +43,3 @@ services:
       - back
     ports:
       - 80:3000
-    volumes:
-      - ./back:/home/app
