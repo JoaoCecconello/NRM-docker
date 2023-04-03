@@ -37,7 +37,6 @@ services:
       context: front
       dockerfile: ./dockerfile
     links:
-      - mysql
       - back
     depends_on:
       - back
