@@ -2,6 +2,8 @@
 
 Apenas um projetinho que sobre um container de MySQL, um rodando uma API em Node.js, outro rodando um container com uma aplicação React e de bônus um container com o PHPMyAdmin.
 
+OBS: esse projeto foi pensado para um ambiente de desenvolvimento simples e rápido...
+
 <h3>Como usar?</h3>
 
 ```bash
